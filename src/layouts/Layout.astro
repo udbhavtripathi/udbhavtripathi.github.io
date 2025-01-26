@@ -1,0 +1,124 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Udbhav Tripathi - Academic Portfolio" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<nav>
+			<div class="nav-content">
+				<a href="/" class="nav-brand">Udbhav Tripathi</a>
+				<div class="nav-links">
+					<a href="/">Home</a>
+					<a href="/cv">CV</a>
+				</div>
+			</div>
+		</nav>
+		<main>
+			<slot />
+		</main>
+		<footer>
+			<p>© {new Date().getFullYear()} Udbhav Tripathi</p>
+		</footer>
+	</body>
+</html>
+
+<style is:global>
+	:root {
+		--primary-color: #2c3e50;
+		--secondary-color: #3498db;
+		--text-color: #333;
+		--background-color: #fff;
+	}
+	
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+	
+	html {
+		font-family: 'Source Sans Pro', sans-serif;
+		background: var(--background-color);
+		color: var(--text-color);
+	}
+
+	body {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 1rem;
+	}
+
+	nav {
+		padding: 1rem 0;
+		border-bottom: 1px solid #eee;
+		margin-bottom: 2rem;
+	}
+
+	.nav-content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.nav-brand {
+		font-size: 1.5rem;
+		font-weight: 700;
+		color: var(--primary-color);
+		text-decoration: none;
+	}
+
+	.nav-links {
+		display: flex;
+		gap: 1.5rem;
+	}
+
+	.nav-links a {
+		color: var(--primary-color);
+		text-decoration: none;
+		font-weight: 600;
+	}
+
+	.nav-links a:hover {
+		color: var(--secondary-color);
+	}
+
+	main {
+		min-height: calc(100vh - 200px);
+		padding: 2rem 0;
+	}
+
+	footer {
+		text-align: center;
+		padding: 2rem 0;
+		color: #666;
+	}
+
+	h1, h2, h3 {
+		color: var(--primary-color);
+		margin-bottom: 1rem;
+	}
+
+	p {
+		margin-bottom: 1rem;
+		line-height: 1.6;
+	}
+
+	.container {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+</style>

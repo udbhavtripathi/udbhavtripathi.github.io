@@ -1,0 +1,239 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Udbhav Tripathi - Home">
+	<div class="container">
+		<div class="profile">
+			<div class="profile-image-section">
+				<img src="/src/components/headshot.png" alt="Udbhav Tripathi" class="profile-image">
+				<blockquote class="profile-quote">
+					"Fall in love with some activity, and do it! Nobody ever figures out what life is all about, and it doesn't matter. Explore the world. Nearly everything is really interesting if you go into it deeply enough."
+				</blockquote>
+			</div>
+			<div class="profile-content">
+				<h1>Udbhav Tripathi</h1>
+				<h2>Research Scientist</h2>
+				<p class="bio">
+					I am a researcher at the intersection of Scientific Machine Learning (SciML) and Scientific Foundation Models (SciFM). 
+					My research focuses on developing novel machine learning approaches for scientific applications, particularly in 
+					the domains of computational physics, 3D geometry, and large language models. I am passionate about bridging 
+					the gap between traditional scientific computing and modern AI techniques.
+				</p>
+				<div class="contact-info">
+					<p>
+						<strong>Email:</strong> udbhav.tripathi.20@gmail.com<br>
+						<strong>Location:</strong> Bangalore, India
+					</p>
+					<div class="social-links">
+						<a href="https://github.com/udbhav-tripathi" target="_blank">GitHub</a>
+						<a href="https://www.linkedin.com/in/udbhav-tripathi/" target="_blank">LinkedIn</a>
+						<a href="https://scholar.google.com/citations?user=udbhav-tripathi" target="_blank">Google Scholar</a>
+						<a href="https://udbhavtripathi.wordpress.com/" target="_blank">Blog</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="research-interests">
+			<h2>Research Interests</h2>
+			<ul>
+				<li>Scientific Foundation Models (SciFM) for computational physics and engineering</li>
+				<li>Scientific Machine Learning (SciML) with focus on PDEs and dynamical systems</li>
+				<li>Large Language Models for scientific applications</li>
+				<li>3D Geometry and Computer Vision</li>
+				<li>Deep Learning for Scientific Computing</li>
+			</ul>
+		</section>
+
+		<section class="research">
+			<h2>Research Overview</h2>
+			<div class="research-area">
+				<h3>Scientific Foundation Models (SciFM)</h3>
+				<p>
+					Developing foundational AI models for scientific applications, focusing on understanding and generating 
+					scientific content, solving complex mathematical problems, and assisting in scientific discovery.
+				</p>
+			</div>
+			<div class="research-area">
+				<h3>Scientific Machine Learning (SciML)</h3>
+				<p>
+					Combining traditional scientific computing methods with modern machine learning approaches, 
+					including neural networks for PDEs and physics-informed machine learning models.
+				</p>
+			</div>
+			<div class="research-area">
+				<h3>3D Geometry & Computer Vision</h3>
+				<p>
+					Working on deep learning approaches for 3D shape analysis, geometric deep learning, 
+					and point cloud processing and analysis.
+				</p>
+			</div>
+		</section>
+
+		<section class="publications">
+			<h2>Selected Publications</h2>
+			<div class="publication-list">
+				<div class="publication">
+					<h3>Title of Publication 1</h3>
+					<p class="authors">Authors list</p>
+					<p class="venue">Conference/Journal Name, Year</p>
+					<div class="pub-links">
+						<a href="#" target="_blank">PDF</a>
+						<a href="#" target="_blank">Code</a>
+						<a href="#" target="_blank">Citation</a>
+					</div>
+				</div>
+				<div class="publication">
+					<h3>Title of Publication 2</h3>
+					<p class="authors">Authors list</p>
+					<p class="venue">Conference/Journal Name, Year</p>
+					<div class="pub-links">
+						<a href="#" target="_blank">PDF</a>
+						<a href="#" target="_blank">Code</a>
+						<a href="#" target="_blank">Citation</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="news">
+			<h2>News & Updates</h2>
+			<ul>
+				<li>2024 - Working on novel approaches in Scientific Foundation Models</li>
+				<li>2023 - Research in SciML applications for computational physics</li>
+				<li>2023 - Developing new methodologies for 3D geometry problems</li>
+			</ul>
+		</section>
+	</div>
+</Layout>
+
+<style>
+	.profile {
+		margin-bottom: 3rem;
+		display: flex;
+		gap: 2rem;
+	}
+
+	.profile-image-section {
+		flex: 0 0 300px;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.profile-image {
+		width: 100%;
+		height: auto;
+		border-radius: 50%;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	}
+
+	.profile-quote {
+		font-style: italic;
+		color: #666;
+		font-size: 0.95rem;
+		margin: 0;
+		padding: 1rem;
+		background-color: #f8f9fa;
+		border-left: 3px solid var(--secondary-color);
+		border-radius: 0 4px 4px 0;
+	}
+
+	.profile-content {
+		flex: 1;
+	}
+
+	.bio {
+		font-size: 1.1rem;
+		margin: 1.5rem 0;
+	}
+
+	.contact-info {
+		margin-top: 1.5rem;
+	}
+
+	.social-links {
+		margin-top: 1rem;
+	}
+
+	.social-links a {
+		margin-right: 1rem;
+		color: var(--secondary-color);
+		text-decoration: none;
+	}
+
+	.social-links a:hover {
+		text-decoration: underline;
+	}
+
+	.research-interests, .research, .publications, .news {
+		margin-bottom: 3rem;
+	}
+
+	.research-area {
+		margin-bottom: 2rem;
+	}
+
+	.research-area h3 {
+		color: var(--secondary-color);
+		margin-bottom: 0.5rem;
+	}
+
+	.publication {
+		margin-bottom: 2rem;
+		padding-left: 1rem;
+		border-left: 3px solid var(--secondary-color);
+	}
+
+	.publication h3 {
+		color: var(--primary-color);
+		margin-bottom: 0.5rem;
+	}
+
+	.authors {
+		color: #666;
+		margin-bottom: 0.5rem;
+	}
+
+	.venue {
+		font-style: italic;
+		color: #666;
+		margin-bottom: 0.5rem;
+	}
+
+	.pub-links {
+		margin-top: 0.5rem;
+	}
+
+	.pub-links a {
+		margin-right: 1rem;
+		color: var(--secondary-color);
+		text-decoration: none;
+	}
+
+	.pub-links a:hover {
+		text-decoration: underline;
+	}
+
+	ul {
+		list-style-position: inside;
+		margin-left: 1rem;
+	}
+
+	li {
+		margin-bottom: 0.5rem;
+	}
+
+	@media (max-width: 768px) {
+		.profile {
+			flex-direction: column;
+		}
+
+		.profile-image-section {
+			flex: 0 0 auto;
+			max-width: 250px;
+			margin: 0 auto;
+		}
+	}
+</style>

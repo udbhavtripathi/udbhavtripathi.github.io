@@ -1,0 +1,108 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="CV - Udbhav Tripathi">
+	<div class="container">
+		<h1>Curriculum Vitae</h1>
+
+		<section class="cv-section">
+			<h2>Education</h2>
+			<div class="entry">
+				<h3>Ph.D. in Computer Science</h3>
+				<p class="institution">Indian Institute of Science (IISc)</p>
+				<p class="date">2020 - Present</p>
+				<p>Focus: Scientific Machine Learning, AI for Science</p>
+			</div>
+			<div class="entry">
+				<h3>M.Tech in Computer Science</h3>
+				<p class="institution">Indian Institute of Technology (IIT)</p>
+				<p class="date">2018 - 2020</p>
+			</div>
+		</section>
+
+		<section class="cv-section">
+			<h2>Research Experience</h2>
+			<div class="entry">
+				<h3>Research Scientist</h3>
+				<p class="institution">Research Lab, Bangalore</p>
+				<p class="date">2020 - Present</p>
+				<ul>
+					<li>Leading research in Scientific Foundation Models</li>
+					<li>Developing novel approaches in Scientific Machine Learning</li>
+					<li>Working on 3D geometry problems and LLM applications</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="cv-section">
+			<h2>Skills</h2>
+			<div class="skills-grid">
+				<div class="skill-category">
+					<h3>Programming</h3>
+					<ul>
+						<li>Python (Advanced)</li>
+						<li>PyTorch / TensorFlow</li>
+						<li>C++ / CUDA</li>
+						<li>MATLAB</li>
+					</ul>
+				</div>
+				<div class="skill-category">
+					<h3>Areas of Expertise</h3>
+					<ul>
+						<li>Scientific Machine Learning</li>
+						<li>Deep Learning</li>
+						<li>Computer Vision</li>
+						<li>Scientific Computing</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</div>
+</Layout>
+
+<style>
+	.cv-section {
+		margin-bottom: 3rem;
+	}
+
+	.entry {
+		margin-bottom: 2rem;
+	}
+
+	.entry h3 {
+		color: var(--secondary-color);
+		margin-bottom: 0.5rem;
+	}
+
+	.institution {
+		font-weight: 600;
+		margin-bottom: 0.25rem;
+	}
+
+	.date {
+		color: #666;
+		font-style: italic;
+		margin-bottom: 0.5rem;
+	}
+
+	.skills-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 2rem;
+	}
+
+	.skill-category h3 {
+		color: var(--secondary-color);
+		margin-bottom: 0.5rem;
+	}
+
+	ul {
+		list-style-position: inside;
+		margin-left: 1rem;
+	}
+
+	li {
+		margin-bottom: 0.5rem;
+	}
+</style>
