@@ -132,6 +132,45 @@
         .bio {
             font-size: 1.1rem;
             margin: 1.5rem 0;
+            line-height: 1.6;
+        }
+
+        .technical-skills {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        .technical-skills h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .technical-skills ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .technical-skills li {
+            margin-bottom: 0.75rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .technical-skills li:before {
+            content: "•";
+            color: var(--secondary-color);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .technical-skills li:last-child {
+            margin-bottom: 0;
         }
 
         .contact-info {
@@ -255,16 +294,23 @@
                         I am a researcher working at the interface of Scientific Machine Learning (SciML), Geometric Deep Learning, and Scientific Foundation Models (SciFM).
                         My work centers on developing scalable, physics-aware machine learning frameworks for scientific data — with a focus on 3D reconstruction, computational physics, and simulation-driven learning. I build end-to-end pipelines from large scale data generation, preprocessing, training large diffusion, transformer 
                         models and experimenting with other architectures for scientific applications.
+                    </p>
 
-                        Technically, I work with:
-                        • Scientific Foundation Models (UPT, Poseidon etc.)
-                        • Geometric Deep Learning (TRELLIS, LATTE3D, etc.)
-                        • Transformer-based models
-                        • 3D geometry processing using PyVista, Open3D, and VTK
-                        • 3D computer vision (NERF, Gaussian Splatting, etc.)
-                        • Physics-guided deep learning for scalar field recovery, geometry-aware encoding, and simulation compression
+                    <div class="technical-skills">
+                        <h3>Technical Expertise</h3>
+                        <ul>
+                            <li>Scientific Foundation Models (UPT, Poseidon etc.)</li>
+                            <li>Geometric Deep Learning (TRELLIS, LATTE3D, etc.)</li>
+                            <li>Transformer-based models</li>
+                            <li>3D geometry processing using PyVista, Open3D, and VTK</li>
+                            <li>3D computer vision (NERF, Gaussian Splatting, etc.)</li>
+                            <li>Physics-guided deep learning for scalar field recovery, geometry-aware encoding, and simulation compression</li>
+                        </ul>
+                    </div>
 
+                    <p class="bio">
                         I'm passionate about integrating physics priors with AI, building modular toolkits for simulation + learning, and accelerating scientific discovery through interpretable, reproducible machine learning.
+                    </p>
 
                     <div class="contact-info">
                         <p>
